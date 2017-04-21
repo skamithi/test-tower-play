@@ -1,0 +1,5 @@
+---
+- host: dev
+  tasks:
+    - name: Echo this is a dev machine
+      command: echo 'This is a dev machine'
