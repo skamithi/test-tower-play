@@ -1,5 +1,5 @@
 ---
 - hosts: dev
   tasks:
-    - name: Echo this is a dev machine
-      file: path=/tmp/dev.txt 
+    - name: create /tmp/dev.txt
+      file: path=/tmp/dev.txt state=touch
