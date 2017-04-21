@@ -2,4 +2,4 @@
 - hosts: prod
   tasks:
     - name: Echo this is a prod machine
-      command: echo 'This is a prod machine'
+      file: path=/tmp/prod.txt
