@@ -1,5 +1,5 @@
 ---
 - hosts: prod
   tasks:
-    - name: Echo this is a prod machine
-      file: path=/tmp/prod.txt
+    - name: create /tmp/prod.txt if it doesn't exist.
+      file: path=/tmp/prod.txt state=touch
